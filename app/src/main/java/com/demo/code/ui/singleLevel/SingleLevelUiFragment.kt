@@ -11,6 +11,8 @@ import com.demo.code.R
 import com.demo.code.databinding.FragmentMultiLevelBinding
 import com.demo.code.databinding.FragmentSingleLevelBinding
 import com.demo.code.ui.multiLevel.MultiLevelUiViewModel
+import com.demo.code.utils.displaySnakbar
+import com.google.android.material.snackbar.Snackbar
 
 class SingleLevelUiFragment : Fragment() {
 
@@ -31,9 +33,17 @@ class SingleLevelUiFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         singleLevelUiViewModel = ViewModelProvider(this).get(SingleLevelUiViewModel::class.java)
-        singleLevelUiViewModel.text.observe(viewLifecycleOwner, {
-            binding.textHome.text = it
-        })
+        setActionsForCustomView()
+    }
+
+    private fun setActionsForCustomView() {
+        // Hide the view in custom view
+        binding.errorViewId.hideTryAgainView()
+
+        // Click action for the button in custom view
+        binding.errorViewId.setTryAgainClickListener {
+            it.displaySnakbar("Try again Clicked !!", Snackbar.LENGTH_LONG)
+        }
     }
 
     override fun onDestroyView() {

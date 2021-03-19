@@ -16,7 +16,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_no_connectivity"
-            android:contentDescription="@string/gb_desc_something_went_wrong" />
+            android:contentDescription="@string/gb_desc_something_went_wrong"
+            tools:ignore="VectorDrawableCompat" />
 
         <TextView
             android:id="@+id/txtTryAgain"
