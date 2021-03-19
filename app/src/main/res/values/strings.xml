@@ -7,4 +7,5 @@
     <string name="gb_try_again">Try Again</string>
     <string name="gb_please_try_again">Please try again</string>
     <string name="gb_oops_something_went_wrong">Oops! Something went wrong.</string>
+    <string name="parent_view_click">Parent view click</string>
 </resources>

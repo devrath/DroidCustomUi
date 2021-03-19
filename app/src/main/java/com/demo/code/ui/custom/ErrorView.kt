@@ -13,12 +13,12 @@ class ErrorView  @JvmOverloads constructor(context: Context,
 ) : ConstraintLayout(context, attributes, defStyleAttr) {
 
     companion object {
-        const val TAG = "GameStreamErrorView"
+        const val TAG = "ErrorView"
     }
 
     private var binding = ErrorViewBinding.inflate(LayoutInflater.from(context), this, true)
 
-    fun hideTryAgainView() {
+    fun hideView() {
         binding.txtPleaseTryAgain.visibility = View.GONE
     }
 

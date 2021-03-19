@@ -11,6 +11,8 @@ import com.demo.code.R
 import com.demo.code.databinding.FragmentListBinding
 import com.demo.code.databinding.FragmentMultiLevelBinding
 import com.demo.code.ui.Listview.ListViewModel
+import com.demo.code.utils.displaySnakbar
+import com.google.android.material.snackbar.Snackbar
 
 class MultiLevelUiFragment : Fragment() {
 
@@ -31,11 +33,25 @@ class MultiLevelUiFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         multiLevelUiViewModel = ViewModelProvider(this).get(MultiLevelUiViewModel::class.java)
-        multiLevelUiViewModel.text.observe(viewLifecycleOwner, {
-            binding.textDashboard.text = it
-        })
+        setActionsForCustomView()
     }
 
+    private fun setActionsForCustomView() {
+
+        // Click action for the button in the parent view
+        binding.parentErrorViewId.setParentButtonViewListener {
+            it.displaySnakbar("Parent view Clicked !!", Snackbar.LENGTH_LONG)
+        }
+
+        // Click action for the button in child view
+        binding.parentErrorViewId.setTryAgainClickListener {
+            it.displaySnakbar("Try again Clicked !!", Snackbar.LENGTH_LONG)
+        }
+
+        // Hide the view in child container
+        binding.parentErrorViewId.hideChildView()
+
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
