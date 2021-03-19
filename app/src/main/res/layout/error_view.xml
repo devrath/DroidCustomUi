@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gb_purple_background">
+
+
+        <ImageView
+            android:id="@+id/connectivityImgId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gb_conn_layout_marginTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_no_connectivity"
+            android:contentDescription="@string/gb_desc_something_went_wrong" />
+
+        <TextView
+            android:id="@+id/txtTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gb_txt_try_again_margin_top"
+            android:lineSpacingExtra="@dimen/gb_txt_try_again_line_spacing"
+            android:padding="@dimen/gb_txt_try_again_padding"
+            android:text="@string/gb_try_again"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/gb_txt_try_again_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPleaseTryAgain" />
+
+        <TextView
+            android:id="@+id/txtPleaseTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gb_try_again_btn_marginTop"
+            android:lineSpacingExtra="@dimen/gb_try_again_line_spacing"
+            android:text="@string/gb_please_try_again"
+            android:textColor="@color/gb_silver_light"
+            android:textSize="@dimen/gb_try_again_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSomethingWentWrong" />
+
+        <TextView
+            android:id="@+id/txtSomethingWentWrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gb_swr_margin_top"
+            android:lineSpacingExtra="@dimen/gb_swr_line_spacing"
+            android:text="@string/gb_oops_something_went_wrong"
+            android:textColor="@color/gb_silver_light"
+            android:textSize="@dimen/gb_swr_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/connectivityImgId" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

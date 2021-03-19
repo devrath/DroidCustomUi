@@ -3,4 +3,8 @@
     <string name="title_single_level">Single Level</string>
     <string name="title_multi_level">Multi Level</string>
     <string name="title_list">List View</string>
+    <string name="gb_desc_something_went_wrong">Something ent wrong</string>
+    <string name="gb_try_again">Try Again</string>
+    <string name="gb_please_try_again">Please try again</string>
+    <string name="gb_oops_something_went_wrong">Oops! Something went wrong.</string>
 </resources>
