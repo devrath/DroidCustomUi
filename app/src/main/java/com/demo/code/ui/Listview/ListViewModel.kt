@@ -1,4 +1,4 @@
-package com.demo.code.ui.notifications
+package com.demo.code.ui.Listview
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

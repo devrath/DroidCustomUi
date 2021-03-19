@@ -1,13 +1,13 @@
-package com.demo.code.ui.home
+package com.demo.code.ui.multiLevel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SingleLevelUiViewModel : ViewModel() {
+class MultiLevelUiViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is dashboard Fragment"
     }
     val text: LiveData<String> = _text
 }
