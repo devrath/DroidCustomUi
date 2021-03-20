@@ -19,7 +19,6 @@ class CustomListAdapter () : RecyclerView.Adapter<CustomListAdapter.ViewHolder>(
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         // Bind your data
 
-
         // Set click events
         viewHolder.itemView.setOnClickListener {
             callback?.onCustItemSelected(itemList[position])

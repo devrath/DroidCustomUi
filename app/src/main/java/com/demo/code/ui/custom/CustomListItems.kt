@@ -46,7 +46,7 @@ class CustomListItems  @JvmOverloads constructor(context: Context,
 
     private fun videoListLayoutManager(): LinearLayoutManager {
         val recommendedVideosManager = LinearLayoutManager(context)
-        recommendedVideosManager.orientation = LinearLayoutManager.HORIZONTAL
+        recommendedVideosManager.orientation = LinearLayoutManager.VERTICAL
         return recommendedVideosManager
     }
 

@@ -6,12 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.demo.code.databinding.FragmentListBinding
+import com.demo.code.databinding.FragmentSingleLevelListBinding
 import com.demo.code.ui.Listview.SingleLevelListViewModel
+import com.demo.code.ui.custom.CustomListAdapter
+import com.demo.code.utils.displaySnakbar
+import com.google.android.material.snackbar.Snackbar
 
-class SingleLevelListFragment : Fragment() {
+class SingleLevelListFragment : Fragment() , CustomListAdapter.Callback{
 
-    private var _binding: FragmentListBinding? = null
+    private var _binding: FragmentSingleLevelListBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var singleLevelListViewModel: SingleLevelListViewModel
@@ -21,16 +24,23 @@ class SingleLevelListFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentListBinding.inflate(inflater, container, false)
+        _binding = FragmentSingleLevelListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         singleLevelListViewModel = ViewModelProvider(this).get(SingleLevelListViewModel::class.java)
-        /*listViewModel.text.observe(viewLifecycleOwner, {
-            binding.textNotifications.text = it
-        })*/
+        setActionsForCustomView()
+    }
+
+    override fun onCustItemSelected(position: Int) {
+       binding.listRootId.displaySnakbar("Row $position".plus("Clicked"), Snackbar.LENGTH_LONG)
+    }
+
+    private fun setActionsForCustomView() {
+        // Set the callback for list
+        binding.customListId.setCallback(this)
     }
 
 
@@ -38,4 +48,5 @@ class SingleLevelListFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
