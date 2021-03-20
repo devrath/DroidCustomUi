@@ -47,7 +47,7 @@ This project demonstrates the use of preparing the custom ui components
 
 --------------
 ### Apk to download
-<a href="main/apk/outputfile.apk" download>Click here to download</a> 
+<a href="https://github.com/devrath/DroidCustomUi/blob/main/apk/outputfile.apk" download>Click here to download</a> 
 
 --------------
 ### Who Made This?
