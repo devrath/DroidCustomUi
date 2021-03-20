@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.demo.code.databinding.FragmentListBinding
-import com.demo.code.ui.Listview.ListViewModel
+import com.demo.code.ui.Listview.SingleLevelListViewModel
 
-class ListFragment : Fragment() {
+class SingleLevelListFragment : Fragment() {
 
     private var _binding: FragmentListBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var listViewModel: ListViewModel
+    private lateinit var singleLevelListViewModel: SingleLevelListViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -27,7 +27,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        listViewModel = ViewModelProvider(this).get(ListViewModel::class.java)
+        singleLevelListViewModel = ViewModelProvider(this).get(SingleLevelListViewModel::class.java)
         /*listViewModel.text.observe(viewLifecycleOwner, {
             binding.textNotifications.text = it
         })*/
