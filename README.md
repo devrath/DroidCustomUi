@@ -35,3 +35,6 @@ This project demonstrates the use of preparing the custom ui components
 **Single level custom view** | Here there a custom view which is a error component having a `Tryagain` click button.<br /> On click of try again button we show a toast
 **Multi level custom view** | Here the single level custom component is encapsulated in another level custom component called the parent custom component. <br /> Whenever we pass the event from our screen to parent custom component, It in-turn deligates to child if needed for child. <br />This we can have any number of nested level of components that can be added
 **Single level custom list view** | Here we deponstrate the encapsulation of listview in a custom component. <br />Here we pass the data nd the callback to the custom list component. <br />There is a interface implemented in the screen from adapter of the list using which adapter can send the selection of item events in adapter
+
+### Demo of project 
+![ProjectDemo](https://github.com/devrath/DroidCustomUi/blob/main/images/demo.gif)
