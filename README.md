@@ -37,4 +37,4 @@ This project demonstrates the use of preparing the custom ui components
 **Single level custom list view** | Here we deponstrate the encapsulation of listview in a custom component. <br />Here we pass the data nd the callback to the custom list component. <br />There is a interface implemented in the screen from adapter of the list using which adapter can send the selection of item events in adapter
 
 ### Demo of project 
-![ProjectDemo](https://github.com/devrath/DroidCustomUi/blob/main/images/demo.gif)
+<img src="/images/demo.gif" width="320" height="660"/>
