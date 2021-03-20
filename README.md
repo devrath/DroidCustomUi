@@ -36,5 +36,14 @@ This project demonstrates the use of preparing the custom ui components
 **Multi level custom view** | Here the single level custom component is encapsulated in another level custom component called the parent custom component. <br /> Whenever we pass the event from our screen to parent custom component, It in-turn deligates to child if needed for child. <br />This we can have any number of nested level of components that can be added
 **Single level custom list view** | Here we deponstrate the encapsulation of listview in a custom component. <br />Here we pass the data nd the callback to the custom list component. <br />There is a interface implemented in the screen from adapter of the list using which adapter can send the selection of item events in adapter
 
-### Demo of project 
+### Demo preview of project 
 <img src="/images/demo.gif" width="320" height="660"/>
+
+### Apk to download
+<a href="main/apk/outputfile.apk" download>Apk to download</a> 
+
+Who Made This?
+--------------
+<a href="http://stackoverflow.com/users/1083093/devrath">
+<img src="http://stackoverflow.com/users/flair/1083093.png" width="208" height="58" alt="profile for Devrath at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Devrath at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
