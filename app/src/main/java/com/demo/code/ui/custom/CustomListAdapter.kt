@@ -8,11 +8,11 @@ import com.demo.code.R
 
 class CustomListAdapter () : RecyclerView.Adapter<CustomListAdapter.ViewHolder>() {
 
-    private val itemList: IntArray = intArrayOf(10, 20, 30, 40, 50)
+    private val itemList = arrayOf("Russia","America","China","India","Germany","France")
 
     private var callback : Callback? = null
 
-    interface Callback { fun onCustItemSelected(position : Int) }
+    interface Callback { fun onCustomItemSelected(position : Int, name : String) }
 
     fun setCallback(callback: Callback) { this.callback = callback }
 
@@ -21,7 +21,7 @@ class CustomListAdapter () : RecyclerView.Adapter<CustomListAdapter.ViewHolder>(
 
         // Set click events
         viewHolder.itemView.setOnClickListener {
-            callback?.onCustItemSelected(itemList[position])
+            callback?.onCustomItemSelected(position, itemList[position])
         }
     }
 

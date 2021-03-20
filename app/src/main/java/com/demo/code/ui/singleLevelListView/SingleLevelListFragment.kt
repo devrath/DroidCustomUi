@@ -34,8 +34,11 @@ class SingleLevelListFragment : Fragment() , CustomListAdapter.Callback{
         setActionsForCustomView()
     }
 
-    override fun onCustItemSelected(position: Int) {
-       binding.listRootId.displaySnakbar("Row $position".plus("Clicked"), Snackbar.LENGTH_LONG)
+    override fun onCustomItemSelected(position: Int, item: String) {
+       binding.listRootId.displaySnakbar("Row $position".plus(" ")
+                                                        .plus(item)
+                                                        .plus(" ")
+                                                        .plus("Clicked!"), Snackbar.LENGTH_LONG)
     }
 
     private fun setActionsForCustomView() {
