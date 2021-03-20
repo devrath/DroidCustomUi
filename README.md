@@ -3,6 +3,20 @@
 # DroidCustomUi
 This project demonstrates the use of preparing the custom ui components
 
+## Description
+* Keeping the code decoupled as much as possible and having it resuable is one of the the important aspects of object oriented programming.
+* While we use `view-model`,`service`,`repository` to seperate and keep the logics reusable, The UI layer also can be done similarly.
+* Now One the the way of doing it is demostrated in the demo here with three varieties of use cases that are extensivey used by developers.
+
+## Advantages
+* Decoupled code 
+* Reusable code in presentation logic
+* Can fix bugs in one place and whereever the layer is used that gets reflected everywhere
+
+## Disadvantages
+* It consumes extra amount of time and effort to properly organize it 
+
+## Files used per module in the project
 
 **Demo Type** | **Files used** 
 ------------- | -------------- 
@@ -10,7 +24,7 @@ This project demonstrates the use of preparing the custom ui components
 **Multi level custom view** | [**Screen**](app/src/main/java/com/demo/code/ui/multiLevel/MultiLevelUiFragment.kt) , [**Layout**](app/src/main/res/layout/fragment_multi_level.xml) , [**FirstLevelLayout**](app/src/main/res/layout/parent_error_view.xml) , [**SecondLevelLayout**](app/src/main/res/layout/error_view.xml) , [**SecondLevelLayout**](app/src/main/res/layout/error_view.xml) , [**ParentErrorView**](app/src/main/java/com/demo/code/ui/custom/ParentErrorView.kt) , [**ChildErrorView**](app/src/main/java/com/demo/code/ui/custom/ErrorView.kt)
 **Single level custom list view** | [**Screen**](app/src/main/java/com/demo/code/ui/singleLevelListView/SingleLevelListFragment.kt) , [**Layout**](app/src/main/res/layout/fragment_single_level_list.xml) , [**Adapter**](app/src/main/java/com/demo/code/ui/custom/CustomListAdapter.kt) , [**CustomListClass**](app/src/main/java/com/demo/code/ui/custom/CustomListItems.kt)
 
-
+## Description about the demo in project 
 
 **Demo Type** | **Description**
 ------------- | --------------
