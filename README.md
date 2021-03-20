@@ -3,7 +3,8 @@
 # DroidCustomUi
 This project demonstrates the use of preparing the custom ui components
 
-| Demo |
+
+| Demo | Files used |
 | --- | -- |
 | Single Level Custom View | [Screen](app/src/main/java/com/demo/code/ui/singleLevel/SingleLevelUiFragment.kt) , 
                              [layout] (app/src/main/res/layout/fragment_single_level.xml) ,
