@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-  <!--  <com.demo.code.ui.custom.CustomListItems
-        android:id="@+id/recoVidListViewId"
+    <com.demo.code.ui.custom.CustomListItems
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context="com.demo.code.ui.custom.CustomListItems" />-->
+        tools:context="com.demo.code.ui.custom.CustomListItems" />
 </androidx.constraintlayout.widget.ConstraintLayout>

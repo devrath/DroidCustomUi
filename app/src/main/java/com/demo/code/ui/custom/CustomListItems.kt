@@ -22,7 +22,7 @@ class CustomListItems  @JvmOverloads constructor(context: Context,
 
     private var binding = ListCustomViewBinding.inflate(LayoutInflater.from(context), this, true)
 
-    //private var adapter : CustomListAdapter = CustomListAdapter()
+    private var adapter : CustomListAdapter = CustomListAdapter()
 
     init {
         setListViewDisplay()
@@ -32,15 +32,15 @@ class CustomListItems  @JvmOverloads constructor(context: Context,
         adapter.updateTracks(tracksList)
     }*/
 
-   /* fun setCallback(callback: CustomListAdapter.Callback) {
+    fun setCallback(callback: CustomListAdapter.Callback) {
         adapter.setCallback(callback)
-    }*/
+    }
 
     private fun setListViewDisplay() {
         binding.listId.layoutManager = videoListLayoutManager()
         binding.listId.addItemDecoration(videosDividerItemDecoration())
         binding.listId.itemAnimator = DefaultItemAnimator()
-        //binding.listId.adapter = adapter
+        binding.listId.adapter = adapter
     }
 
 
@@ -56,4 +56,5 @@ class CustomListItems  @JvmOverloads constructor(context: Context,
         verticalDecoration.setDrawable(verticalDivider!!)
         return verticalDecoration
     }
+
 }
