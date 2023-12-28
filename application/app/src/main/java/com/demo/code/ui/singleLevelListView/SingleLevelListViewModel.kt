@@ -1,4 +1,4 @@
-package com.demo.code.ui.Listview
+package com.demo.code.ui.singleLevelListView
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

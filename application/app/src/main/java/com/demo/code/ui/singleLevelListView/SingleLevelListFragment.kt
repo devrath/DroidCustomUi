@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.demo.code.databinding.FragmentSingleLevelListBinding
-import com.demo.code.ui.Listview.SingleLevelListViewModel
 import com.demo.code.ui.custom.CustomListAdapter
 import com.demo.code.utils.displaySnakbar
 import com.google.android.material.snackbar.Snackbar
